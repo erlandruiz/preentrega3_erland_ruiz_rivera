@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    <!-- //***************FAVICON********/ -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/faviconperuze.png"
+      type="image/x-icon"
+    />
+
+   
+    <!-- /***************bOXICONS O REMIXICONX********/ -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    
+    <!-- /***************SWIPER CSS********/ -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+
+    <!-- /***************CSS********/ -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+
+    <!-- /***************SWEET ALERT********/ -->
+  
+
+    <title>Pedro Ruiz Zeta - Portfolio</title>
+  </head>
+  <body>
+  
+    <!-- /***************HEADER********/ -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          Pedro Ruiz Zeta<i class="bx bxs-home-alt-2"></i>
+        </a>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home-alt-2"></i>
+                <span>Inicio</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#popular" class="nav__link">
+                <i class="bx bx-building-house"></i>
+                <span>Trabajos</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#value" class="nav__link">
+                <i class="bx bx-award"></i>
+                <span>Trayectoria</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="bx bx-phone"></i>
+                <span>Contáctame</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        
+        <!-- /***************DIA Y NOCHE BOTON********/ -->
+      
+        <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+        <a href="#" class="button nav__button"> Contáctame </a>
+      </nav>
+    </header>
+
+   
+    <!-- /***************MAIN********/ -->
+    <main class="main">
+
+      <!-- /***************HOME********/ -->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">
+              Trabajos. <br />
+              Cálculos y Fórmulas. <br />
+              Maniobras.
+            </h1>
+
+            <p class="home__description">
+              Desarrollo de maniobras offshore en plataformas petroleras
+              utilizando barcazas, grúas , winches , grilletes etc.
+            </p>
+            
+
+
+
+            <span class="section__subtitle">Trabajos en realizados</span>
+            <h2 class="section__title  section__title_trabajosAmostrar">
+              Ubicacion. <br />
+              Tonelajes levantados. <br />
+            </h2>
+            <div id="trabajosAmostrar" class="trabajosAmostrar">
+            </div>
+
+   
+
+          </div>
+
+
+          <div class="home__images">
+            <div class="home__orbe"></div>
+
+            <div class="home__img">
+              <img src="./assets/img/homeperuze.jpg" alt="" />
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+     
+      <!-- /***************iNGRESO DE TRABAJOS********/ -->
+
+      <section class="subscribe section">
+        <div class="subscribe__container container">
+          
+          
+          <span class="section__subtitle">Ingresar</span>
+          <h2 class="section__title  section__title_trabajosAmostrar">
+            Tabajados detallados <br />
+            para Ingresar. <br />
+          </h2>
+
+          <div class="home__ingresar__trabajo" id="home__ingresar__trabajoid">
+            <form action="" class="home__search__ingresar_trabajo" id="form__ingresar__trabajoid">
+              <h3 class="popular__title">
+                Ubicación.
+              </h3>
+              <input
+                type="search"
+                placeholder="Ingresar por Ubicacion..."
+                class="home__input__ingresar"
+                id="home__ubicacion"
+              />
+              <h3 class="popular__title">
+                Tonelaje.
+              </h3>
+              <input
+                type="search"
+                placeholder="Ingresar Tonelaje..."
+                class="home__input__ingresar"
+                id="home__tonelaje"
+              />
+              <h3 class="popular__title">
+                Dias de trabajo.
+              </h3>
+              <input
+                type="search"
+                placeholder="Ingresar dias de trabajo..."
+                class="home__input__ingresar"
+                id="home__dias"
+              />
+              <button class="btnAgregarTrabajo buttonDisable" id="btnAgregarTrabajoId">Agregar Trabajos</button>
+              
+            </form>
+
+            <div class="ingreso__datos ingreso__disable" id="ingreso__datosId">
+              <div class="ingreso" id="ingresoId"> </div>
+              <div class="resultado__pantalla">
+                <p>Usted ingresará el siguiente trabajo</p>
+                <button id="btnAceptar" class="button">Aceptar</button>
+                <button id="btnCancelar" class="button">Cancelar</button>
+              </div>
+            </div>
+
+       
+
+
+          </div>
+          
+        </div>
+      </section>
+
+
+
+    
+      <!-- /***************LOGOS********/ -->
+      <section class="logos section">
+        <div class="logos__container container grid">
+          <div class="logos__img">
+            <img src="./assets/img/logoperuze1.png" alt="">
+          </div>
+          <div class="logos__img">
+            <img src="./assets/img/logoperuze2.png" alt="">
+          </div>
+          <div class="logos__img">
+            <img src="./assets/img/logoperuze3.png" alt="">
+          </div>
+          <div class="logos__img">
+            <img src="./assets/img/logoperuze4.png" alt="">
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+     
+      <!-- /***************POPULAR********/ -->
+      <section class="popular section" id="popular">
+        <div class="container">
+          <span class="section__subtitle">Trabajos en realizados</span>
+          <h2 class="section__title">
+            Maniobras en barcazas<span>.</span>
+          </h2>
+
+          <div class="popular__container swiper">
+            <div class="swiper-wrapper">
+              
+              <article class="popular__card swiper-slide">
+                <img src="./assets/img/popularperuze1.jpg" alt="" class="popular__img">
+
+                <div class="popular__data">
+                  <h2 class="popular__price">
+                    <span></span>Traslado de Jacket.
+                  </h2>
+                  <h3 class="popular__title">
+                    Jacket Colan.
+                  </h3>
+                  <p class="popular__description">
+                    Traslado de Jacket , jalado desde bahía a barcaza para ser llevado a su locación.
+                  </p>
+                </div>
+              </article>
+
+
+              <article class="popular__card swiper-slide">
+                <img src="./assets/img/popularperuze2.jpg" alt="" class="popular__img">
+
+                <div class="popular__data">
+                  <h2 class="popular__price">
+                    <span></span>Elección de Cables.
+                  </h2>
+                  <h3 class="popular__title">
+                    Cables, grilletes y jarcia.
+                  </h3>
+                  <p class="popular__description">
+                    Indicación del uso correcto de cables, grilletes y jarcia, así como la elección del material óptimo para el trabajo.
+                  </p>
+                </div>
+              </article>
+
+
+              <article class="popular__card swiper-slide">
+                <img src="./assets/img/popularperuze3.jpg" alt="" class="popular__img">
+
+                <div class="popular__data">
+                  <h2 class="popular__price">
+                    <span></span>Lanzamiento de Jackets.
+                  </h2>
+                  <h3 class="popular__title">
+                    Dirección de lanzamiento de Jackets.
+                  </h3>
+                  <p class="popular__description">
+                    Acondicionamiento de barcazas para la recepción, traslado y lanzamiento de jackets en su locación.
+                  </p>
+                </div>
+              </article>
+
+
+              <article class="popular__card swiper-slide">
+                <img src="./assets/img/popularperuze4.jpg" alt="" class="popular__img">
+
+                <div class="popular__data">
+                  <h2 class="popular__price">
+                    <span></span>Dirección de Maniobras.
+                  </h2>
+                  <h3 class="popular__title">
+                    Monitoreo y cálculos matemáticos para maniobras Offshore.
+                  </h3>
+                  <p class="popular__description">
+                    Cálculos de peso, elección de grúas , monitoreo de maniobras de izaje  Offshore.
+                  </p>
+                </div>
+              </article>
+
+
+              <article class="popular__card swiper-slide">
+                <img src="./assets/img/popularperuze5.jpg" alt="" class="popular__img">
+
+                <div class="popular__data">
+                  <h2 class="popular__price">
+                    <span></span>Elección del perfil personal idóneo.
+                  </h2>
+                  <h3 class="popular__title">
+                    Toma de exámenes en conocimiento y experiencia.
+                  </h3>
+                  <p class="popular__description">
+                    Elección del personal con experiencia para trabajos complejos en barcazas, entrenamiento al personal para realizar trabajos offshore.
+                  </p>
+                </div>
+              </article>
+
+
+            </div>
+            <div class="swiper-button-next">
+              <i class='bx bx-chevron-right'></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class='bx bx-chevron-left'></i>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+    <!-- /***************FOOTER********/ -->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        
+        <div>
+          <a href="#" class="footer__logo">
+            Pedro Ruiz Zeta<i class='bx bxs-home-alt-2'></i>
+          </a>
+          <p class="footer__description">
+            Maniobras, cálculos, buenas prácticas.<br> 
+            Soporte y asesoramiento en maniobras Offshore.
+          </p>
+        </div>
+
+        <div class="footer__content">
+          
+          <div>
+            <h3 class="footer__title">
+              Acerca de
+            </h3>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">Proyectos</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Trayectoria</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Noticias</a>
+              </li>
+            </ul>
+          </div>
+
+
+          <div>
+            <h3 class="footer__title">
+              Normas
+            </h3>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">Normas de trabajo</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Información</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Seguridad</a>
+              </li>
+            </ul>
+          </div>
+
+
+          <div>
+            <h3 class="footer__title">
+              Soporte
+            </h3>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">FAQs</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Centro de soporte</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Contáctame</a>
+              </li>
+            </ul>
+          </div>
+
+
+          <div>
+            <h3 class="footer__title">
+              Sígueme
+            </h3>
+
+            <ul class="footer__social">
+              <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                <i class='bx bxl-facebook-circle' ></i>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                <i class='bx bxl-instagram-alt' ></i>
+              </a>
+              <a href="https://twitter.com/home?lang=es" target="_blank" class="footer__social-link">
+                <i class='bx bxl-twitter'></i>
+              </a>
+            </ul>
+
+         
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+      <div class="footer__info container">
+        <div class="footer__privacy">
+          <a href="">Terms & Agreements</a>
+          <a href="">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+   <!-- /***************SCROLL UP********/ -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class='bx bx-chevrons-up' ></i>
+    </a>
+
+    <!-- /***************SCROLLREVEAL********/ -->
+    <script src="./js/scrollreveal.min.js"></script>
+
+    <!-- /***************SWIPER********/ -->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+ <!-- /***************MAIN JS********/ -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
